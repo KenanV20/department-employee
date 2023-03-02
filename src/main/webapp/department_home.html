@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+
+            height: 100vh;
+            gap: 10px;
+            width: 100%;
+            background-image: url("https://www.investopedia.com/thmb/6wht1j1h_hJs0jlr31fKbXT0EJk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-932251156-44ba5ec903d547e695ec0489c9ab1624.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .overlay{
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0,0,0,50%);
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+        form{
+            width: 100%;
+        }
+        .employee-link{
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            color: white;
+            background-color: #3E54AC;
+            border-radius: 10px;
+            border: 1px solid #000;
+            margin-bottom: 8px;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            transition: all .3s;
+            font-weight: 500;
+        }
+
+
+        .employee-link:hover{
+            background-color: brown;
+        }
+        .main-menu{
+            width: 50%;
+            text-decoration: none;
+            border-radius: 6px;
+            padding: 10px;
+            background-color: blueviolet;
+            color: #fff;
+            text-align: center;
+            transition: all .3s;
+            border: 1px solid #000;
+
+        }
+        .main-menu:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+<div class="overlay">
+
+    <div>
+        <form action="department" method="get">
+            <input type="submit" class="employee-link" value="Get departments">
+
+        </form>
+
+        <a href="department_form.html" class="employee-link">Add department</a>
+
+        <a href="index.jsp" class="main-menu">Main menu</a>
+
+    </div>
+</div>
+</body>
+
+</html>
